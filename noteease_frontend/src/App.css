@@ -1,15 +1,94 @@
 :root {
+  /* Light Theme Variables - default */
   --base-light: #00ffff;
   --base-dark: #00008b;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
+  --primary: #4A90E2;
+  --secondary: #fff;
+  --accent: #F5A623;
+  --chip-bg: #e8f1fa;
+  --chip-border: #d0d7e2;
+  --chip-selected: #4A90E2;
+  --fab-bg: #F5A623;
+  --fab-color: #fff;
+
+  --notecard-bg: #f9fbfc;
+  --notecard-border: #e3e3ed;
+
+  --modal-bg: #fff;
+  --modal-text: #232a36;
+
+  --text-color: #1a1a1a;
+  --text-secondary: #4e5a6e;
+  --text-secondary-light: rgba(34,40,54,0.68);
+  --border-color: #e3e3ed;
+
+  --input-bg: #f7fafd;
+  --navbar-bg: var(--base-dark);
+  --navbar-desc: #adb8be;
 }
 
-body {
+/* Dark Theme Variables */
+body.theme-dark, .theme-dark {
+  --base-light: #E87A41;
+  --base-dark: #181B23;
+  --primary: #87bafd;
+  --secondary: #232735;
+  --accent: #F5A623;
+  --chip-bg: #22293A;
+  --chip-border: #3B4254;
+  --chip-selected: #365FAB;
+  --fab-bg: #F5A623;
+  --fab-color: #232735;
+
+  --notecard-bg: #22293A;
+  --notecard-border: #384574;
+
+  --modal-bg: #242A38;
+  --modal-text: #f3f3fa;
+
+  --text-color: #f3f3fa;
+  --text-secondary: #9cbbe7;
+  --text-secondary-light: #bccdde;
+  --border-color: #384574;
+
+  --input-bg: #1F2534;
+  --navbar-bg: #181B23;
+  --navbar-desc: #a7c6e9;
+}
+
+body.theme-light, .theme-light {
+  /* (optional, could just use :root, but acts as reset) */
+  --base-light: #00ffff;
+  --base-dark: #00008b;
+  --primary: #4A90E2;
+  --secondary: #fff;
+  --accent: #F5A623;
+  --chip-bg: #e8f1fa;
+  --chip-border: #d0d7e2;
+  --chip-selected: #4A90E2;
+  --fab-bg: #F5A623;
+  --fab-color: #fff;
+
+  --notecard-bg: #f9fbfc;
+  --notecard-border: #e3e3ed;
+
+  --modal-bg: #fff;
+  --modal-text: #232a36;
+
+  --text-color: #1a1a1a;
+  --text-secondary: #4e5a6e;
+  --text-secondary-light: rgba(34,40,54,0.68);
+  --border-color: #e3e3ed;
+
+  --input-bg: #f7fafd;
+  --navbar-bg: var(--base-dark);
+  --navbar-desc: #adb8be;
+}
+
+body, .app {
   margin: 0;
   font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
-  background-color: var(--base-dark);
+  background-color: var(--secondary);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
